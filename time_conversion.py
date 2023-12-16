@@ -1,9 +1,9 @@
-def time_conversion(str):
-      if str[-2:] == "AM" and str[:2] == "12":
-         return "00" + str[2:-2]
-      elif str[-2:] == "AM":
-         return str[:-2]
-      elif str[-2:] == "PM" and str[:2] == "12":
-         return str[:-2]
+def time_conversion(s):
+      if s[-2:] == "AM" and s[:2] == "12":
+         return "00" + s[2:-2]
+      elif s[-2:] == "AM":
+         return s[:-2]
+      elif s[-2:] == "PM" and s[:2] == "12":
+         return s[:-2]
       else:
-         return str(int(str[:2]) + 12) + str[2:8]   
+         return str(int(s[:2]) + 12) + s[2:8]   
